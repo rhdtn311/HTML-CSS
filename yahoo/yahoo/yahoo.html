@@ -1,29 +1,83 @@
+ <!-- header까지 완성 -->
 <!DOCTYPE html>
 <html>
 <head>
     <style>
+        
+        header{
+            width:99%;
+            margin:0;
+            border:1px solid #cccccc;
+        }
+        
+        a{text-decoration:none;} /*하이퍼 텍스트에 밑줄을 없앰(firefox)*/
+
+        #header{
+            width:99%;
+            margin:0;
+            border:1px solid #cccccc;
+        }
+
         #header_nav{
             width : 100%;
-            background-color: darkmagenta;
-                     
+            background-color: #2d1152;
+            color:white;
+            overflow:hidden;
         }
-        #header_nav {
-            font-size : 0.9rem;
-            color : white;
-            display: flex;
-            flex-direction: row;
-        }
+        
         #header_nav li{
-            margin:20px;
+            float:left;
+            margin-right:20px;
             list-style: none;
         }
-        #header_nav ul{
-            display:flex;
-            flex-direction: row;
-        }
+
         #header_nav .firefox{
-            display:flex;
-            position:right;
+            padding-right : 10px;
+            float:right;
+        }
+
+        #header_nav .firefox a{
+            color:white;
+        }
+
+        #header_info{
+            width:1000px;
+            margin: 0 auto;
+        }
+
+        #header_info div{
+            margin-top:10px;
+            float:left;
+        }
+
+        #header_info .search input{
+            width:400px;
+            font-size:20px;
+            border: royalblue 1px solid;
+            margin-top : 6px;
+            padding:5px;
+        }
+
+        #header_info .btn_search{
+            width:124px; height:34px;
+            background:url(./search_btn.png) no-repeat;
+            border:0;
+        }
+
+        #header_info .btn_search .txt_sw{
+            color:white;
+            font-size:17px;
+        }
+
+        #header_info .service li{
+            float:left;
+            margin-right:15px;
+            font-size : 15px;
+            list-style : none;
+        }
+
+        #header_info .service{
+            float:right;
         }
 
     </style>
@@ -48,6 +102,30 @@
             </div>
             <div class = "firefox">
                 <a href ="#none">Upgrade to the new firefox>></a>
+            </div>
+        </div>
+        <div id="header_info">
+            <div class="logo">
+                <img src="yahoo_logo.png" alt="yahoo.com logo">
+            </div>
+            <div class="search">
+                <input type="text">
+                <button type="submit" class = "btn_search">
+                    <span class="txt_sw">search web</span>
+                </button>
+            </div>
+            <div class="service">
+                <ul>
+                    <li>
+                        <a href="#none">My Yahoo</a>
+                    </li>
+                    <li>
+                        <a href="#none">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#none">Mail</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
