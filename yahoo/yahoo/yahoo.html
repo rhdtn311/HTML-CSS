@@ -1,133 +1,278 @@
  <!-- header까지 완성 -->
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        
-        header{
-            width:99%;
-            margin:0;
-            border:1px solid #cccccc;
-        }
-        
-        a{text-decoration:none;} /*하이퍼 텍스트에 밑줄을 없앰(firefox)*/
+ <!-- content까지 완성-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <style>
+         
+         header{
+             width:99%;
+             margin:0;
+             border:1px solid #cccccc;
+         }
+         
+         a{text-decoration:none;} /*하이퍼 텍스트에 밑줄을 없앰(firefox)*/
+ 
+         #header{
+             width:99%;
+             margin:0;
+             border:1px solid #cccccc;
+         }
+ 
+         #header_nav{
+             width : 100%;
+             background-color: #2d1152;
+             color:white;
+             overflow:hidden;
+         }
+         
+         #header_nav li{
+             float:left;
+             margin-right:20px;
+             list-style: none;
+         }
+ 
+         #header_nav .firefox{
+             padding-right : 10px;
+             float:right;
+         }
+ 
+         #header_nav .firefox a{
+             color:white;
+         }
+ 
+         #header_info{
+             width:1000px;
+             margin: 0 auto;
+         }
+ 
+         #header_info div{
+             margin-top:10px;
+             float:left;
+         }
+ 
+         #header_info .search input{
+             width:400px;
+             font-size:20px;
+             border: royalblue 1px solid;
+             margin-top : 6px;
+             padding:5px;
+         }
+ 
+         #header_info .btn_search{
+             width:124px; height:34px;
+             background:url(./search_btn.png) no-repeat;
+             border:0;
+         }
+ 
+         #header_info .btn_search .txt_sw{
+             color:white;
+             font-size:17px;
+         }
+ 
+         #header_info .service li{
+             float:left;
+             margin-right:15px;
+             font-size : 15px;
+             list-style : none;
+         }
+ 
+         #header_info .service{
+             float:right;
+         }
+ 
+         #content{
+             width:1000px;
+             margin: 0 auto;
+             margin-top:85px;
+             overflow:hidden;
+         }
+ 
+         #content #main_nav{
+             float:left;
+             width:155px;
+         }
+ 
+         #content #main_nav li{
+             list-style:none;
+         }
+ 
+         #content #main{
+             width : 590px;
+             float:left;
+         }
+ 
+         #content #main div:nth-child(1){
+             width:590px;
+             height:300px;
+             border:1px black solid;
+         }
+ 
+         #content #main div:nth-child(2){
+             width:590px; 
+             height: 150px;
+             margin-top:15px;
+             border : 1px black solid;
+         }
 
-        #header{
-            width:99%;
-            margin:0;
-            border:1px solid #cccccc;
-        }
+         #content #main div:nth-child(3){
+             width:590px;
+             height: 50px;
+             background-color: rgb(105, 25, 105);
+         }
 
-        #header_nav{
-            width : 100%;
-            background-color: #2d1152;
-            color:white;
-            overflow:hidden;
-        }
-        
-        #header_nav li{
+         #content #main div:nth-child(n+4){
+             width:590px;
+             height:130px;
+             border:1px black solid;
+             margin-top:5px
+         }
+
+         #content #main ul{
+             margin : 8px;
+         }
+
+         #content #main ul li{
+             float:left;
+             margin : 13px 0;
+             margin-left : 20px;
+             list-style:none;
+             color:white;
+         }
+ 
+         #content #main_banner{
             float:left;
-            margin-right:20px;
-            list-style: none;
-        }
+            width:230px;
+            margin-left:10px;
+         }
 
-        #header_nav .firefox{
-            padding-right : 10px;
-            float:right;
-        }
+         #content #main_banner div:nth-child(n){
+             border : black solid 1px;
+             margin-top:5px;
+             width:230px;
+         }
 
-        #header_nav .firefox a{
-            color:white;
-        }
+         #content #main_banner div:nth-child(1){
+            height:100px;
+         }
 
-        #header_info{
-            width:1000px;
-            margin: 0 auto;
-        }
+         #content #main_banner div:nth-child(2){
+             height:100px;
+             
+         }
 
-        #header_info div{
-            margin-top:10px;
-            float:left;
-        }
+         #content #main_banner div:nth-child(3){
+             height: 150px;
+         }
 
-        #header_info .search input{
-            width:400px;
-            font-size:20px;
-            border: royalblue 1px solid;
-            margin-top : 6px;
-            padding:5px;
-        }
+         #content #main_banner div:nth-child(4){
+             height: 200px;
+         }
 
-        #header_info .btn_search{
-            width:124px; height:34px;
-            background:url(./search_btn.png) no-repeat;
-            border:0;
-        }
-
-        #header_info .btn_search .txt_sw{
-            color:white;
-            font-size:17px;
-        }
-
-        #header_info .service li{
-            float:left;
-            margin-right:15px;
-            font-size : 15px;
-            list-style : none;
-        }
-
-        #header_info .service{
-            float:right;
-        }
-
-    </style>
-</head>
-<body>
-    <header>
-        <div id="header_nav">
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Mail</li>
-                    <li>Answers</li>
-                    <li>Groups</li>
-                    <li>Flickr</li>
-                    <li>Tumblr</li>
-                    <li>Games</li>
-                    <li>Live</li>
-                    <li>Screen</li>
-                    <li>Mobile</li>
-                    <li>More</li>
-                </ul>
-            </div>
-            <div class = "firefox">
-                <a href ="#none">Upgrade to the new firefox>></a>
-            </div>
-        </div>
-        <div id="header_info">
-            <div class="logo">
-                <img src="yahoo_logo.png" alt="yahoo.com logo">
-            </div>
-            <div class="search">
-                <input type="text">
-                <button type="submit" class = "btn_search">
-                    <span class="txt_sw">search web</span>
-                </button>
-            </div>
-            <div class="service">
-                <ul>
-                    <li>
-                        <a href="#none">My Yahoo</a>
-                    </li>
-                    <li>
-                        <a href="#none">Sign In</a>
-                    </li>
-                    <li>
-                        <a href="#none">Mail</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-</body>
-</html>
+         #content #main_banner div:nth-child(5){
+             height:300px;
+         }
+ 
+         
+     </style>
+ </head>
+ <body>
+     <header>
+         <div id="header_nav">
+             <div>
+                 <ul>
+                     <li>Home</li>
+                     <li>Mail</li>
+                     <li>Answers</li>
+                     <li>Groups</li>
+                     <li>Flickr</li>
+                     <li>Tumblr</li>
+                     <li>Games</li>
+                     <li>Live</li>
+                     <li>Screen</li>
+                     <li>Mobile</li>
+                     <li>More</li>
+                 </ul>
+             </div>
+             <div class = "firefox">
+                 <a href ="#none">Upgrade to the new firefox>></a>
+             </div>
+         </div>
+         <div id="header_info">
+             <div class="logo">
+                 <img src="yahoo_logo.png" alt="yahoo.com logo">
+             </div>
+             <div class="search">
+                 <input type="text">
+                 <button type="submit" class = "btn_search">
+                     <span class="txt_sw">search web</span>
+                 </button>
+             </div>
+             <div class="service">
+                 <ul>
+                     <li>
+                         <a href="#none">My Yahoo</a>
+                     </li>
+                     <li>
+                         <a href="#none">Sign In</a>
+                     </li>
+                     <li>
+                         <a href="#none">Mail</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </header>
+     <div id = "content">
+         <div id="main_nav">
+             <ul>
+                 <li>Mail</li>
+                 <li>News</li>
+                 <li>Sports</li>
+                 <li>Finance</li>
+                 <li>Weather</li>
+                 <li>Autos</li>
+                 <li>Screen</li>
+                 <li>Dating</li>
+                 <li>Shopping</li>
+                 <li>Makers</li>
+                 <li>Parenting</li>
+                 <li>Health</li>
+                 <li>Style</li>
+                 <li>Beauty</li>
+                 <li>Politice</li>
+                 <li>Movies</li>
+                 <li>Travel</li>
+                 <li>Tech</li>
+                 <li>TV</li>
+             </ul>
+         </div>
+         <div id="main">
+             <div>main big banner</div>
+             <div>main slide banner</div>
+             <div>
+                 <ul>
+                     <li>All Stories</li>
+                     <li>News</li>
+                     <li>Entertainment</li>
+                     <li>Sports</li>
+                     <li>Business</li>
+                     <li>More</li>
+                 </ul>
+             </div>
+             <div>main topic</div>
+             <div>main topic</div>
+             <div>main topic</div>
+             <div>main topic</div>
+         </div>
+         <div id="main_banner">
+             <div>hit search word</div>
+             <div>ad1</div>
+             <div>ad2</div>
+             <div>ad3</div>
+             <div>ad4</div>
+         </div>
+     </div>
+     <footer>footer</footer>
+ </body>
+ </html>
