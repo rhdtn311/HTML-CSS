@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size:92px;
+    letter-spacing: 0.01cm
+}
+
+h1 span:nth-child(1){
+    color:#4285f4
+}
+
+h1 span:nth-child(2){
+    color:#ea4335
+}
+
+h1 span:nth-child(3){
+    color:#fbbc05
+}
+
+h1 span:nth-child(4){
+    color:#4285f4
+}
+
+h1 span:nth-child(5){
+    color:#34a853
+}
+
+h1 span:nth-child(6){
+    color:#ea4335
+}
+
+search{
+    width:1000px;
+    margin:0 auto;
+}
+
+form {
+    width: 579px;
+    margin-top: 38px;
+}
+
+form #search_button{
+    background-color:#f4f4f4;
+    border-style : none;
+    color:#5f6368;
+    border-radius: 4px;
+    padding: 5px 18px;
+    position: absolute;
+    top: 44%;
+    left: 43%;
+}
+
+form #side_button{
+    background-color:#f4f4f4;
+    border-style : none;
+    color:#5f6368;
+    border-radius: 4px;
+    padding: 5px 18px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+}
