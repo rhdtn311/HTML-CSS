@@ -1,25 +1,29 @@
+<!-- 60% 완성-->
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="google.css">
     <style>
-        #google_logo{
-        position: relative;
-        top : 190px;
-        left :810px;
-        }
+
     </style>
 </head>
 <body>
-    <main>
-    <img id ="google_logo" src="google_logo.png"><br>
-    <input type="text">
-    <div>Google 검색</div>
-    <p>I'm Feeling Lucky</p>
-    <div>Google Ads를 활용한 헬스케어 스타트업의 글로벌 진출기를 확인해보세요</div>
-    </main>
-    <footer>
-        <p>대한민국</p>
-        <p>광고 비즈니스 Google정보 검색의 원리 개인정보처리방침 약관 설정</p>
-    </footer>
+    <h1><span>G</span><span>o</span><span>n</span><span>g</span><span>l</span><span>e</span></h1>
+    <search>
+        <form class="mx-auto " action = "https://google.com/search" method="GET">
+        <div class="input-group mb-3 ">
+            <input type="text" name = "q" class="form-control rounded-pill"  placeholder="Google 검색 또는 URL 입력"" aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+        <button id="search_button">
+            Google 검색
+        </button>
+        </form>
+        <form action = "https://www.google.com/doodles/">
+            <button id = "side_button" >
+            I'm Feeling Lucky
+            </button>
+        </form>
+    </search>
 </body>
 </html>
