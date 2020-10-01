@@ -29,11 +29,6 @@ h1 span:nth-child(6){
     color:#ea4335
 }
 
-search{
-    width:1000px;
-    margin:0 auto;
-}
-
 form {
     width: 579px;
     margin-top: 38px;
@@ -63,6 +58,10 @@ form #side_button{
 
 .search_bar {
     width:100%;
+}
+
+.search_bar #text{
+    padding: 0 46px;
 }
 
 #mic_img{
