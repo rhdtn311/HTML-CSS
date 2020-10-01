@@ -62,6 +62,7 @@ form #side_button{
 
 .search_bar #text{
     padding: 0 46px;
+    padding-right : 75px;
 }
 
 #mic_img{
