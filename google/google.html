@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="google.css">
+    <link rel="stylesheet" href="fontello/fontello-f45c359b/fontello-f45c359b/css/fontello.css">
     <style>
 
     </style>
@@ -12,8 +13,13 @@
     <h1><span>G</span><span>o</span><span>n</span><span>g</span><span>l</span><span>e</span></h1>
     <search>
         <form class="mx-auto " action = "https://google.com/search" method="GET">
-        <div class="input-group mb-3 ">
-            <input type="text" name = "q" class="form-control rounded-pill"  placeholder="Google 검색 또는 URL 입력"" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group mb-3">
+            <div class="search_bar">
+                <input id = "text" type="text" name = "q" class="form-control rounded-pill"  placeholder="       Google 검색 또는 URL 입력"" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <span id = "mic_img" class="icon-mic"> </span>
+                <span id = "search_img" class="icon-search"></span>
+                <span id = "keyboard_img" class="icon-keyboard"></span>
+            </div>
         </div>
         <button id="search_button">
             Google 검색
