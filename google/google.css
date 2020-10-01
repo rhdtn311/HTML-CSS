@@ -60,3 +60,26 @@ form #side_button{
     top: 44%;
     left: 50%;
 }
+
+.search_bar {
+    width:100%;
+}
+
+#mic_img{
+    position: absolute;
+    right: 11px;
+    margin-top: -30px;
+}
+
+#search_img{
+    position: absolute;
+    left: 11px;
+    margin-top: -30px;
+}
+
+#keyboard_img{
+    position : absolute;
+    right : 46px;
+    margin-top:-30px;
+
+}
