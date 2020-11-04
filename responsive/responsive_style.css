@@ -1,0 +1,41 @@
+body{
+    margin:0;
+}
+
+.navBar{
+    display:flex;
+    background-color: royalblue;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 12px;
+}
+
+.navBar .logo {
+    color:orangered;
+    font-size:150%;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navigation {
+    list-style: none;
+    display:flex;
+    padding-left:0
+}
+
+.navigation li{
+    padding:5px 10px;
+}
+
+.link_logo{
+    display:flex;
+    list-style:none;
+    color:white;
+}
+
+.link_logo li{
+    padding:5px 10px;
+}
