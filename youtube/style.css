@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+hr{
+    color:lightgray;
+    margin:0 15px;
+}
+.topBar{
+    display:flex;
+    background-color: #330000;
+    padding:12px 10px;
+    align-items:center;
+}
+
+.logo{
+    color:red;
+    margin-right:5px;
+}
+
+.topLogo{
+    position:absolute;
+    right:10px;
+    color:white;
+}
+
+#main_video{
+    width:100%;
+}
+
+#tag{
+    color:blue;
+    margin: 8px 15px;
+}
+
+#Subject{
+    margin:0px 15px;
+}
+
+#view__Information{
+    color:#828282;
+    margin-left:15px;
+    font-size:80%;
+}
+
+.button_icons{
+    display:flex;
+    justify-content: space-around;
+    color:#707070;
+}
+
+.button_icons :hover{
+    cursor: pointer;
+}
+
+.button_icons :active{
+    color:#0052E0;
+}
+
+.buttons li{
+    list-style:none;
+}
+
+.button_names{
+    display:flex;
+    justify-content:space-around;
+    font-size:80%;
+    color:#707070;
+}
+
+.button_names :nth-child(1) {
+    position:relative;
+    left:5px;
+}
+
+.button_names :nth-child(n+2) {
+    position:relative;
+    left:20px;
+}
+
+.button_names :nth-child(5) {
+    position:relative;
+    left:10px;
+}
+
+.profile{
+    display:flex;
+    align-items: center;
+    margin:10px 15px;
+}
+
+.profile i {
+    font-size:250%;
+    margin-right:10px;
+}
+
+.profile #name {
+    font-size: 110%;
+}
+
+.profile #follower{
+    font-size:80%;
+    color:#828282;
+}
+
+.profile #subscribe{
+    position:absolute;
+    right:15px;
+    font-size : 90%;
+    font-weight : bold;
+    color:#6D6D6D;
+}
+#next{
+    color : #828282;
+    margin : 10px 0 -10px 15px;
+}
+.videos{
+    display:flex;
+    flex-direction: column;
+    padding : 10px 15px;
+}
+.videos .first_video,.second_video,.third_video{
+    display:flex; 
+    margin : 15px 0px;
+}
+
+.videos .first_video .another_video_information{
+    margin : 0 15px;
+}
+
+.videos .second_video .another_video_information2{
+    margin : 0 15px;
+}
+
+.videos .third_video .another_video_information3{
+    margin : 0 15px;
+}
+
+#av_author,#av_author2,#av_author3{
+    font-size:90%;
+    color:#828282;font-size:90%;
+    color:#828282;
+}
+
+#av_sub,#av_sub2,#av_sub3{
+    font-size:80%;
+    color:#828282;
+}
