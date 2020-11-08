@@ -4,8 +4,7 @@
 -   요새는 거의 flex를 사용한다.
 -   FLEX는 container 속성과 item 속성으로 구성되어 있다.
 
-![](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg =400x250) 
-![image](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg =400x250)
+![](https://lh4.googleusercontent.com/pyBcWobvF5XiorAMwUObY8ClUrUJKt7DGmZdASWz0YLKFwyg1uUy8NIs1t_vn18kv-UrOeyQpjTLOTCl1kLNseRPYfbFmwWUp_Jh0EKOdwuFYbsBiOA_XIQlJwHMEsKc-7jQWTDP)![](https://lh4.googleusercontent.com/PWTkzyJUVYsjNBpjm6k2aOP2yIPtcVKjEFtZ098vHErIkzdgS21wJ0s0CUJYFaMNYwC5kG3L2wndxFh8yZJ5XPVTcipYDgHvOsbCKBj-8NId203QtBHyQ3aFOJsCo91StorrETE3)
 
 # <Container 속성>
 
@@ -28,7 +27,7 @@
     
 
   
-![](https://lh4.googleusercontent.com/x7UGgvbdfJHbcVzhUr0jgkT2dfkuy9af2PRuXBqRnMdwxK7FW0uWOwbS27J6mXOhJ3bYVqIYbrOIaRzPmvZgW_q0vDyftfYAOmD1plVCP8tFEDe2A6n8ASpjtea7R7AupRxv2aSb)  
+<img src="https://lh4.googleusercontent.com/x7UGgvbdfJHbcVzhUr0jgkT2dfkuy9af2PRuXBqRnMdwxK7FW0uWOwbS27J6mXOhJ3bYVqIYbrOIaRzPmvZgW_q0vDyftfYAOmD1plVCP8tFEDe2A6n8ASpjtea7R7AupRxv2aSb">  
 
 - item이 container에 배치되는 방향을 정의한다.
 
@@ -56,7 +55,7 @@
 
     
 
-![](https://lh5.googleusercontent.com/miOI0QRAMtTv7opXbR1zgzCHF4Y6f8TBTgm0TVfFHzp_dhBhpvntYpc4h-yYP48QjC-cPR1OQws0PosYrVeHIBAF6wFRXKnL144i7_fbN0BIphj3wchVeSPGsz-NCTtWbfqhWYiE)
+<img src="https://lh5.googleusercontent.com/miOI0QRAMtTv7opXbR1zgzCHF4Y6f8TBTgm0TVfFHzp_dhBhpvntYpc4h-yYP48QjC-cPR1OQws0PosYrVeHIBAF6wFRXKnL144i7_fbN0BIphj3wchVeSPGsz-NCTtWbfqhWYiE">
 
 -   기본적으로 flex item 은 모두 한 줄에 맞추려고 한다.
     
@@ -96,8 +95,6 @@
 
 ## *justify-content*
 
-    
-
 -   중심축에 따라 정렬을 한다.
     
 -   item들의 여유 공간을 분산하는 데 도움이 된다.
@@ -109,7 +106,8 @@
 }
 ```
 
-![image](https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg =550x550)
+<img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" width="550" height="550" >
+
 -   **flex-start** (default): 기본 설정으로, item은 container의 앞쪽에서부터 배치
 -   **flex-end** : item은 container의 뒤쪽에서부터 배치
 -   **center** : item은 container의 가운데에서부터 배치
@@ -131,7 +129,7 @@
 	align-items: stretch | flex-start | flex-end | center |baseline
 }
 ```
-![image](https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg =550x550)
+<img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" width="550" height="550">
 
   
 
@@ -153,7 +151,7 @@
 -   주의할 점은 flex-wrap 속성을 통해 Items가 여러 줄(2줄 이상)이고 여백이 있을 경우만 사용할 수 있다.
     
 
-![image](https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg =550x550)
+<img src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" width="550" height="550">
 
 -   **stretch**(default) : Container의 교차 축을 채우기 위해 Items를 늘림
     
@@ -177,7 +175,7 @@
 
 -   default값 :0
   
-  ![image](https://css-tricks.com/wp-content/uploads/2018/10/order.svg =350x350)
+<img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" width="350" height="350">
 
 ``` css
 .item {
@@ -192,7 +190,7 @@
 -   1로 설정된 경우 균등하게 item의 크기가 지정되지만 만약 특정 item에 flex-grow 를 2로 준다면 다른 item에 비해 2배 커진다.
     
 
-![](https://lh3.googleusercontent.com/YKQkYrpi6KrluDaTLXg79QhAdmZYxgO3lW9t3DkcacYNzXEdeUxBFFzz3JyICWXtVZ7F3NqBO5J-Up0jUcn6xVx95PPvlg7F0P2nXep55u4g-OeJ41rBGo8BK0cik7Q9tl5A5_TM)
+<img src="https://lh3.googleusercontent.com/YKQkYrpi6KrluDaTLXg79QhAdmZYxgO3lW9t3DkcacYNzXEdeUxBFFzz3JyICWXtVZ7F3NqBO5J-Up0jUcn6xVx95PPvlg7F0P2nXep55u4g-OeJ41rBGo8BK0cik7Q9tl5A5_TM">
 
 ``` css
 .item {
