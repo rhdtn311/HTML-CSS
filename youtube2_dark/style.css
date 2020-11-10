@@ -1,0 +1,192 @@
+/* 
+html,css로 유튜브 dark 버전 클론코딩
+
+알게된 것 : 
+    :root, var
+    box-sizing:border-box 
+    calc()
+    
+*/
+
+:root{
+    --padding : 10px;
+    
+    --text_small:8px;
+    --text_medium:12px;
+    --text_large:16px;
+
+    --backgroundColor:#181818;
+    --mainTextColor:white;
+    --subTextColor:#aaa8a5;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    color:var(--mainTextColor)
+}
+button, button:focus{
+    border:none;
+    background-color: var(--backgroundColor);
+    cursor: pointer;
+    color:blue;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:var(--padding);
+    background-color:#202020;
+    color:white
+}
+
+header .logo i{
+    color:red;
+    font-size:130%
+}
+
+.video{
+    text-align:center;
+    background-color: black;
+}
+
+#main_video {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.partOne > .info{
+    padding:var(--padding)
+}
+
+.info .title_info .hashtags{
+    color:blue;
+    margin-bottom:calc(var(--padding)/2);
+}
+
+.info  .title_info .titleAndbutton{
+    display:flex;
+}
+
+.info .title_info .titleAndbutton i{
+    color:var(--subTextColor);
+}
+
+.info .viewrs{
+    color:var(--subTextColor);
+    font-size:var(--text_medium)
+}
+
+.info .action .actionButtons{
+    display:flex;
+    color:white;
+    justify-content: space-evenly;
+    margin:var(--padding);
+}
+
+.info .action li {
+    list-style: none;
+}
+
+.info .action li i{
+    font-size:130%;
+}
+
+.info .action .actionButtons li button{
+    display:flex;
+    flex-direction:column;
+    color:var(--subTextColor);
+    padding:var(--padding);
+}
+
+.info .action .actionButtons li button i{
+    margin : 0 auto;
+    margin-bottom: 8px;
+}
+
+.channel{
+    border-top:solid 1px var(--subTextColor);
+    border-bottom:solid 1px var(--subTextColor);
+    padding:calc(var(--padding)*2);
+    display:flex;
+    justify-content:space-between;
+}
+
+.channel img {
+    width:10%;
+    border-radius:50%;
+    margin-right:calc(var(--padding)*2);
+}
+
+.actionButtons .active{
+    color:blue;
+}
+
+.channel .title {
+    display:flex;
+    align-items: center;
+}
+
+.channel .title .subscribers{
+    font-size:var(--text_medium);
+    color:var(--subTextColor);
+}
+
+.channel .buttonAndAlarm{
+    display:flex;
+    align-items: center;
+}
+
+.channel .buttonAndAlarm i {
+    margin-left:10px;
+}
+
+.channel .subscribe{
+    text-transform: uppercase;
+}
+
+.upNext{
+    padding:var(--padding);
+}
+
+.upNext .head{
+    margin-bottom:var(--padding);
+}
+
+.upNext .nextVideo{
+    display:flex;
+    padding:var(--padding);
+    padding-left:0;
+}
+
+.upNext .nextVideo .img {
+    margin-right : calc(var(--padding)*3/2);
+}
+
+.upNext .nextVideo .name,.subscribe {
+    font-size:var(--text_medium);
+    color:var(--subTextColor);
+}
+
+.upNext .nextVideo .img{
+    flex:1 1 35%;
+}
+.upNext .nextVideo .img img{
+    width:100%
+}
+
+.upNext .nextVideo .info{
+    flex : 1 1 65%;
+}
+
+
+@media screen and (min-width:768px) {
+    body{
+        display:flex;
+    }
+}
