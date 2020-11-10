@@ -30,8 +30,13 @@ hr{
     color:white;
 }
 
+.video{
+    text-align:center;
+    background-color:black;
+}
 #main_video{
     width:100%;
+    max-width:1000px;
 }
 
 #tag{
@@ -59,8 +64,13 @@ hr{
     cursor: pointer;
 }
 
-.button_icons :active{
+button{
+    border:none;
+}
+
+.button_icons i.active{
     color:#0052E0;
+    outline: none;
 }
 
 .buttons li{
